@@ -3,10 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/72f68e5874.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Oswald:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Harper</title>
 </head>
 <body>
-    
+    <header>
+        <div class="wrapper">
+            <nav class="mainMenu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Harper</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav><!-- END .mainMenu -->
+
+            <div class="headerContent">
+                <div class="imgContainer wrapper">
+                    <img src="./assets/home-image-1.jpg" alt="Woman in striped shirt surrounded by balloons">
+                </div>
+
+                <div class="headerText wrapper">
+                    <div class="headerTextContainer">
+                        <h1>Harper</h1>
+                        <img src="./assets/circle-text.png" alt="text that reads: everyday life of Harper">
+                    </div>
+                </div>
+            </div><!-- END .headerContent -->
+        </div><!-- END .wrapper -->
+    </header>
+
+    <!-- MAIN Starts -->
+    <main>
+        <!-- Section -->
+        <section class="aboutHarper">
+            <div class="wrapper">
+                <div class="textContainer">
+                    <h2>Who's Harper</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe delectus tempore earum consequuntur, repellendus id distinctio consequatur officia labore in dicta vitae ex quos amet eos tenetur a numquam cumque sit vero architecto porro.</p>
+                    <button>Find out more</button>
+                </div>
+            </div><!-- END .wrapper -->
+        </section><!-- END Section .aboutHarper -->
+
+        <section class="pageAreas">
+            <div class="imgContainer">
+                <!-- Container for the background image so I can style the div more -->
+            </div>
+            <div class="wrapper">
+                <div class="pageAreaContainer">
+                    <div class="iconContainer">
+                        <i class="fas fa-image" aria-hidden="true"></i>
+                        <span class="sr-only">Photo Icon</span>
+                    </div>
+                    <h3 class="areaTitle">Photos</h3>
+                    <p class="areaCopy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa mollitia dignissimos odit! Iure sapiente eveniet laudantium earum quod nulla consequatur perspiciatis molestiae ad maxime, hic sunt.</p>
+                </div>
+
+                <div class="pageAreaContainer">
+                    <div class="iconContainer">
+                        <i class="fas fa-user" aria-hidden="true"></i>
+                        <span class="sr-only">User Icon</span>
+                    </div>
+                    <h3 class="areaTitle">About</h3>
+                    <p class="areaCopy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa mollitia dignissimos odit! Iure sapiente eveniet laudantium earum quod nulla consequatur perspiciatis molestiae ad maxime, hic sunt.</p>
+                </div>
+
+                <div class="pageAreaContainer">
+                    <div class="iconContainer">
+                        <i class="fas fa-tv" aria-hidden="true"></i>
+                        <span class="sr-only">TV Icon</span>
+                    </div>
+                    <h3 class="areaTitle">Blog</h3>
+                    <p class="areaCopy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa mollitia dignissimos odit! Iure sapiente eveniet laudantium earum quod nulla consequatur perspiciatis molestiae ad maxime, hic sunt.</p>
+                </div>
+
+                <div class="pageAreaContainer">
+                    <div class="iconContainer">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        <span class="sr-only">Phone Icon</span>
+                    </div>
+                    <h3 class="areaTitle">Contact Me</h3>
+                    <p class="areaCopy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa mollitia dignissimos odit! Iure sapiente eveniet laudantium earum quod nulla consequatur perspiciatis molestiae ad maxime, hic sunt.</p>
+                </div>
+            </div><!-- END .wrapper -->
+        </section><!-- END .pageAreas Section -->
+
+        <section class="travel">
+            <div class="wrapper">
+                <div class="imgContainer">
+                    <img src="./assets/home-image-3.jpg" alt="Two surfers on the ocean at sunset">
+                </div>
+                <div class="textContainer">
+                    <h3>Harper's Travels</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus aperiam distinctio minus facere hic aut, cumque autem voluptas debitis, eius quisquam dolor assumenda praesentium, ad qui nisi soluta quasi inventore iusto suscipit architecto. Eum.</p>
+                    <button>Read More</button>
+                </div>
+            </div><!-- END .wrapper -->
+        </section><!-- END .travel Section -->
+
+        <section class="favourites">
+            <div class="wrapper">
+                <div class="textContainer">
+                    <h3>Favourite Things</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus aperiam distinctio minus facere hic aut, cumque autem voluptas debitis, eius quisquam dolor assumenda praesentium, ad qui nisi soluta quasi inventore iusto suscipit architecto. Eum.</p>
+                    <button>Read More</button>
+                </div>
+                <div class="imgContainer">
+                    <img src="./assets/home-image-4.jpg" alt="Red brick building with three ducts against a pink-blue sunset">
+                </div>
+            </div><!-- END .wrapper -->
+        </section><!-- END .favorites Section -->
+
+        <section class="harpersJourney">
+            <div class="wrapper">
+                <div class="imgContainer">
+                    <img src="./assets/home-image-5.jpg" alt="Woman in floral dress">
+                </div>
+                <div class="textContainer">
+                    <h2>Harper's Journey</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, laboriosam. Doloremque sapiente, explicabo libero laborum est vel delectus consequuntur numquam necessitatibus blanditiis doloribus voluptatum nesciunt esse ipsa? Modi est voluptate ex suscipit nam eos. Consequuntur labore animi officiis tempore obcaecati aliquid magnam necessitatibus distinctio culpa assumenda quod illo, libero sequi? Eaque est quas explicabo.</p>
+                    <button>Find out more</button>
+                </div>
+            </div><!-- END .wrapper -->
+        </section><!-- END .harpersJourney Section -->
+
+        <section class="imageGallery">
+            <div class="wrapper">
+                <div class="imgContainer">
+                    <img src="./assets/home-image-6.jpg" alt="Pink house with white windows against a light blue sky">
+                    <img src="./assets/home-image-7.jpg" alt="Airplane flying through colourful clouds">
+                    <img src="./assets/home-image-8.jpg" alt="Cotton candy pink clouds against a blue sky">
+                </div>
+            </div><!-- END .wrapper -->
+        </section><!-- END .imageGallery Section -->
+    </main>
+
+    <footer>
+        <p>Copyright © 2022 Juno College</p>
+    </footer>
 </body>
 </html>
