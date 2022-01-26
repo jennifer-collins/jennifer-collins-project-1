@@ -1,1 +1,53 @@
 // add font styles/sizing into here
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Oswald:wght@700&display=swap');
+
+
+html {
+    font-size: 125%;
+}
+
+/*Typography*/
+body {
+    font-family: $bodyFont;
+    font-size: 1rem;
+    color: $textColorPrimary;
+    line-height: 32px;
+    letter-spacing: 0px;
+}
+
+h1, h2, h3, h4, .mainMenu {
+    font-family: $headerFont;
+    font-weight: 700;
+    color: $textColorPrimary;
+    margin: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 92px;
+}
+
+h2 {
+    font-size: 2.1rem;
+    margin-bottom: 34px;
+}
+
+h3 {
+    font-size: 1.6rem;
+    margin-bottom: 32px;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+.mainMenu {
+    line-height: 29px;
+    letter-spacing: 1px;
+}
+
+p {
+    margin: 0 0 35px 0;
+}

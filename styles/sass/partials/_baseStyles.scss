@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding:0;
+}
+
+.wrapper {
+    max-width: 1260px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+//consider putting img {max-width:100%;}
+
+button {
+    background-color: $button;
+    color: $textColorPrimary;
+    font-family: $headerFont;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 32px;
+    padding: 16px 45px;
+    letter-spacing: 1px;
+    border: none;
+}
+
