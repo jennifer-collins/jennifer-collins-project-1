@@ -1,0 +1,26 @@
+.mainMenu {
+    background-color: $primary;
+    padding: 37px 0;
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    li {
+        padding: 0 25px;
+    }
+    a {
+        color: $textColorPrimary;
+        text-decoration: none;
+        &:hover,
+        &:focus {
+            color: $textColorSecondary;
+        }
+    }
+}
+
+.mainMenu .harper {
+    font-size: 1.75rem;
+    margin: 0 5px;
+}

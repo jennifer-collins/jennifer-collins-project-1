@@ -312,6 +312,44 @@ button {
   border: none;
 }
 
+.mainMenu {
+  background-color: #b9dde7;
+  padding: 37px 0;
+}
+.mainMenu ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.mainMenu li {
+  padding: 0 25px;
+}
+.mainMenu a {
+  color: #171717;
+  text-decoration: none;
+}
+.mainMenu a:hover, .mainMenu a:focus {
+  color: #f6f6f6;
+}
+
+.mainMenu .harper {
+  font-size: 1.75rem;
+  margin: 0 5px;
+}
+
+/* .aboutHarper */
+/* .pageAreas */
+/* .travel */
+/* .favourites */
+/* .harpersJourney */
 @media (max-width: 1000px) {
   /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
 }
