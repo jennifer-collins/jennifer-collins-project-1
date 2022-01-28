@@ -261,7 +261,7 @@ h1, h2, h3, h4, .mainMenu {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 8rem;
   line-height: 92px;
 }
 
@@ -315,6 +315,8 @@ button {
 .mainMenu {
   background-color: #b9dde7;
   padding: 37px 0;
+  width: 50%;
+  margin: 0 auto;
 }
 .mainMenu ul {
   list-style: none;
@@ -325,9 +327,9 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 .mainMenu li {
   padding: 0 25px;
@@ -342,13 +344,50 @@ button {
 
 .mainMenu .harper {
   font-size: 1.75rem;
-  margin: 0 5px;
 }
 
 header {
   background-color: #b9dde7;
+  height: 100vh;
+  width: 100%;
+}
+header .headerContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header .headerContent .imgContainer {
+  width: 40%;
+  position: relative;
+  top: 50px;
+}
+header .headerContent .imgContainer img {
+  max-width: 100%;
+  width: 100%;
+  -webkit-box-shadow: 15px 15px white;
+          box-shadow: 15px 15px white;
+}
+header .headerContent .headerText {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .headerContent .headerText .headerTextContainer {
+  margin-left: 100px;
+  position: relative;
+}
+header .headerContent .headerText .headerTextContainer img {
+  position: absolute;
+  top: -95px;
+  right: -50px;
 }
 
+/* Contact Page Header */
+/* Blog Page Header */
 /* .aboutHarper */
 /* .pageAreas */
 /* .travel */
