@@ -348,26 +348,27 @@ button {
 
 header {
   background-color: #b9dde7;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 }
-header .headerContent {
+
+.headerContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-header .headerContent .imgContainer {
+.headerContent .imgContainer {
   width: 40%;
   position: relative;
   top: 50px;
 }
-header .headerContent .imgContainer img {
+.headerContent .imgContainer img {
   max-width: 100%;
   width: 100%;
   -webkit-box-shadow: 15px 15px white;
           box-shadow: 15px 15px white;
 }
-header .headerContent .headerText {
+.headerContent .headerText {
   width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -376,11 +377,11 @@ header .headerContent .headerText {
       -ms-flex-align: center;
           align-items: center;
 }
-header .headerContent .headerText .headerTextContainer {
+.headerContent .headerText .headerTextContainer {
   margin-left: 100px;
   position: relative;
 }
-header .headerContent .headerText .headerTextContainer img {
+.headerContent .headerText .headerTextContainer img {
   position: absolute;
   top: -95px;
   right: -50px;
@@ -389,7 +390,70 @@ header .headerContent .headerText .headerTextContainer img {
 /* Contact Page Header */
 /* Blog Page Header */
 /* .aboutHarper */
+.aboutHarper {
+  background-color: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.aboutHarper .textContainer {
+  width: 50%;
+  margin: 115px 0;
+}
+
 /* .pageAreas */
+.pageAreas {
+  background-color: #f6f6f6;
+}
+.pageAreas .imgContainer {
+  background-image: url(../assets/home-image-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+}
+
+.pageAreaContainer {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 95px 0 100px 0;
+}
+.pageAreaContainer li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(50% - 20px);
+  margin: 10px;
+}
+
+.pageAreas .textContainer h3 {
+  margin-bottom: 35px;
+}
+
+.areaCopy {
+  margin-bottom: 58px;
+}
+
+.iconContainer {
+  margin-right: 25px;
+}
+.iconContainer i {
+  text-align: center;
+  padding: 15px;
+  background-color: #b9dde7;
+  border-radius: 50%;
+  position: relative;
+  bottom: 5px;
+}
+
 /* .travel */
 /* .favourites */
 /* .harpersJourney */

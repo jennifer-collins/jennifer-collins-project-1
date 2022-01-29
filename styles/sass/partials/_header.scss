@@ -1,12 +1,13 @@
 header {
     background-color: $primary;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
+}// look at the nesting here and update
     .headerContent {
         display: flex;
         .imgContainer {
             width: 40%;
-            position: relative;
+            position: relative; //look at changing this to position absolute to
             top: 50px;
         }
         .imgContainer img {
@@ -29,7 +30,7 @@ header {
             }
         }
     }
-}
+
 
 /* Contact Page Header */
 
