@@ -389,6 +389,13 @@ header {
 
 /* Contact Page Header */
 /* Blog Page Header */
+.blog .imgContainer {
+  background-image: url(./assets/blog-image-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vh;
+}
+
 /* .aboutHarper */
 .aboutHarper {
   background-color: #f6f6f6;
