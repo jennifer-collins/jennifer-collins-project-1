@@ -79,9 +79,117 @@
 
 
 /* .travel */
+.travel {
+    margin-bottom: 75px;
+}
+
+.travel .contentContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // margin-bottom: 75px;
+    .imgContainer {
+        width: 50%;
+        position: relative;
+        bottom: 45px;
+        img {
+            max-width: 100%;
+            box-shadow: 15px 15px $secondary, -200px 15px $secondary;
+        }
+    }
+    .textContainer {
+        width: calc(50% - 62px);
+        margin-left: 62px;
+    }
+}
 
 
 /* .favourites */
+.favourites {
+    margin-bottom: 75px;
+}
+
+.favourites .contentContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // margin-bottom: 75px;
+    .imgContainer {
+        width: 50%;
+        position: relative;
+        top: 45px;
+        img {
+            max-width: 100%;
+            box-shadow: 15px 15px $tertiary, 200px 15px $tertiary;
+        }
+    }
+    .textContainer {
+        width: calc(50% - 62px);
+        margin-right: 62px;
+
+    }
+}
 
 
 /* .harpersJourney */
+.harpersJourney {
+    background-color: $textColorSecondary;
+    .contentContainer{
+        display: flex;
+        flex-direction: row;
+        min-height: 50vh;
+        align-items: center;
+    }
+}
+
+.harpersJourney {
+    .imgContainer {
+        width: 30%;
+        // width: calc(30% - 60px);
+        // margin-right: 60px;
+        img {
+            box-shadow: 15px 15px $secondary;
+            max-width: 100%;
+        }
+    }
+}
+
+.harpersJourney {
+    .textContainer {
+        width: calc(70% - 60px);
+        margin-left: 60px;
+    }
+}
+
+/* .imageGallery Section */
+.imageGallery {
+    padding: 60px 0;
+    margin: 0;
+    .imgContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        // width: 100%;
+        // width: calc(33.3% - 5px);
+        // margin: 0 5px;
+        .image {
+            // width: 33.3%;
+        }
+        img {
+            max-width: 100%;
+        } 
+    }
+}
+
+/* Footer */
+footer {
+    background-color: $textColorPrimary;
+    // margin: 0;
+    p {
+        text-align: center;
+        color: $textColorSecondary;
+        margin-bottom: 0;
+        padding: 22px 0;
+    }
+}

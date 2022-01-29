@@ -455,8 +455,135 @@ header {
 }
 
 /* .travel */
+.travel {
+  margin-bottom: 75px;
+}
+
+.travel .contentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.travel .contentContainer .imgContainer {
+  width: 50%;
+  position: relative;
+  bottom: 45px;
+}
+.travel .contentContainer .imgContainer img {
+  max-width: 100%;
+  -webkit-box-shadow: 15px 15px #227284, -200px 15px #227284;
+          box-shadow: 15px 15px #227284, -200px 15px #227284;
+}
+.travel .contentContainer .textContainer {
+  width: calc(50% - 62px);
+  margin-left: 62px;
+}
+
 /* .favourites */
+.favourites {
+  margin-bottom: 75px;
+}
+
+.favourites .contentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.favourites .contentContainer .imgContainer {
+  width: 50%;
+  position: relative;
+  top: 45px;
+}
+.favourites .contentContainer .imgContainer img {
+  max-width: 100%;
+  -webkit-box-shadow: 15px 15px #68b0c1, 200px 15px #68b0c1;
+          box-shadow: 15px 15px #68b0c1, 200px 15px #68b0c1;
+}
+.favourites .contentContainer .textContainer {
+  width: calc(50% - 62px);
+  margin-right: 62px;
+}
+
 /* .harpersJourney */
+.harpersJourney {
+  background-color: #f6f6f6;
+}
+.harpersJourney .contentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 50vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.harpersJourney .imgContainer {
+  width: 30%;
+}
+.harpersJourney .imgContainer img {
+  -webkit-box-shadow: 15px 15px #227284;
+          box-shadow: 15px 15px #227284;
+  max-width: 100%;
+}
+
+.harpersJourney .textContainer {
+  width: calc(70% - 60px);
+  margin-left: 60px;
+}
+
+/* .imageGallery Section */
+.imageGallery {
+  padding: 60px 0;
+  margin: 0;
+}
+.imageGallery .imgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.imageGallery .imgContainer img {
+  max-width: 100%;
+}
+
+/* Footer */
+footer {
+  background-color: #171717;
+}
+footer p {
+  text-align: center;
+  color: #f6f6f6;
+  margin-bottom: 0;
+  padding: 22px 0;
+}
+
 @media (max-width: 1000px) {
   /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
 }
