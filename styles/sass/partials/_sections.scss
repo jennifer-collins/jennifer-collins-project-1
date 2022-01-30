@@ -193,3 +193,86 @@ footer {
         padding: 22px 0;
     }
 }
+
+/* CONTACT PAGE */
+.contact {
+    background-color: $textColorSecondary;
+}
+
+.contactSectionMain {
+    display: flex;
+    flex-direction: row;
+    padding: 95px 0;
+    align-items: flex-start;
+    .contactInfo {
+        background-color: white;
+        width: 20%;
+        // margin: 95px 0;
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.socialIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+    margin: 20px;
+}
+
+.socialIcons a {
+    color: $secondary;
+    text-decoration: none;
+}
+
+.contactForm {
+    width: 80%;
+}
+
+/* BLOG PAGE */
+
+.blogMain {
+    background-color: $textColorSecondary;
+}
+
+.aboutHarperBlog,
+.recentPosts,
+.blogContent {
+    background-color: white;
+}
+
+
+.blogSectionContent {
+    display: flex;
+}
+
+.blogContent {
+    padding: 40px 40px 60px 40px;
+    margin-bottom: 30px;
+    border-bottom: 5px solid $secondary;
+    p {
+        margin-bottom: 10px;
+    }
+}
+
+
+.blogComments {
+    margin-bottom: 30px;
+    .maggieComment, .daisyComment {
+        display: flex;
+        justify-content: space-between;
+        padding: 38px;
+        background-color: white;
+        margin-bottom: 20px;
+        .imgContainer {
+            margin-right: 20px;
+        }
+    }
+}
+
+.daisyComment {
+    border-bottom: 5px solid $secondary;
+}
+
