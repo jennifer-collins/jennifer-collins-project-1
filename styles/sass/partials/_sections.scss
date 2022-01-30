@@ -235,6 +235,22 @@ footer {
 
 .blogMain {
     background-color: $textColorSecondary;
+    .sideBar {
+        margin-right: 17px;
+        .aboutHarperBlog {
+            padding: 25px;
+            margin-bottom: 20px;
+            .imgContainer {
+                margin-bottom: 10px;
+            }
+        }
+        .recentPosts {
+            padding: 25px;
+        }
+    }
+    .blogSection {
+        margin-left: 17px;
+    }
 }
 
 .aboutHarperBlog,
@@ -243,9 +259,27 @@ footer {
     background-color: white;
 }
 
+.sideBar {
+    padding: 20px 20px;
+}
+
+.recentPosts {
+    li {
+        list-style-position: inside;
+        a {
+            text-decoration: none;
+            color: $textColorPrimary;
+            &:hover,
+            &:focus {
+                color: $secondary;
+            }
+        }
+    }
+}
 
 .blogSectionContent {
     display: flex;
+    padding: 95px 0;
 }
 
 .blogContent {

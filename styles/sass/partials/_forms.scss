@@ -1,16 +1,32 @@
 /* Contact Form*/
 
-.contactForm {
-    display: flex;
-    flex-direction: column;
-    margin-left: 35px;
-}
+// .contactForm {
+//     display: flex;
+//     flex-direction: column;
+//     margin-left: 35px;
+// }
 
 /* Blog Comment Form */
-.commentsForm {
+// .commentsForm
+form {
     display: flex;
     flex-direction: column;
 }
+
+.nameEmail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%
+}
+
+input {
+        width: 49%;
+    }
+
+// textarea {
+//     width: 100%;
+// }
 
 
 // input[type="text"] {

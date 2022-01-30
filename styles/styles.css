@@ -645,6 +645,22 @@ footer p {
 .blogMain {
   background-color: #f6f6f6;
 }
+.blogMain .sideBar {
+  margin-right: 17px;
+}
+.blogMain .sideBar .aboutHarperBlog {
+  padding: 25px;
+  margin-bottom: 20px;
+}
+.blogMain .sideBar .aboutHarperBlog .imgContainer {
+  margin-bottom: 10px;
+}
+.blogMain .sideBar .recentPosts {
+  padding: 25px;
+}
+.blogMain .blogSection {
+  margin-left: 17px;
+}
 
 .aboutHarperBlog,
 .recentPosts,
@@ -652,10 +668,26 @@ footer p {
   background-color: white;
 }
 
+.sideBar {
+  padding: 20px 20px;
+}
+
+.recentPosts li {
+  list-style-position: inside;
+}
+.recentPosts li a {
+  text-decoration: none;
+  color: #171717;
+}
+.recentPosts li a:hover, .recentPosts li a:focus {
+  color: #227284;
+}
+
 .blogSectionContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 95px 0;
 }
 
 .blogContent {
@@ -690,7 +722,8 @@ footer p {
 }
 
 /* Contact Form*/
-.contactForm {
+/* Blog Comment Form */
+form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -698,18 +731,24 @@ footer p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 35px;
 }
 
-/* Blog Comment Form */
-.commentsForm {
+.nameEmail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+input {
+  width: 49%;
 }
 
 /* Blog Comment Form */
