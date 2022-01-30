@@ -29,6 +29,11 @@ h1 {
     line-height: 92px;
 }
 
+.blog h1,
+.contactPage h1 {
+    font-size: 5rem;
+}
+
 h2 {
     font-size: 2.1rem;
     margin-bottom: 34px;
@@ -51,6 +56,7 @@ h4 {
 p {
     margin: 0 0 35px 0;
 }
+//this margin setting is creating problems in the entire html
 
 // a {
 //     text-decoration: none;

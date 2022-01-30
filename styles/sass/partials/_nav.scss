@@ -1,13 +1,14 @@
 .mainMenu {
     background-color: $primary;
     padding: 37px 0;
-    width: 50%;
-    margin: 0 auto;
+    width: 100%;
     ul {
         list-style: none;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        width: 50%;
+        margin: 0 auto;
     }
     li {
         padding: 0 25px; //do i need this padding?

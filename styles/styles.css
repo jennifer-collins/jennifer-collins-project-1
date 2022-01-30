@@ -265,6 +265,11 @@ h1 {
   line-height: 92px;
 }
 
+.blog h1,
+.contactPage h1 {
+  font-size: 5rem;
+}
+
 h2 {
   font-size: 2.1rem;
   margin-bottom: 34px;
@@ -315,8 +320,7 @@ button {
 .mainMenu {
   background-color: #b9dde7;
   padding: 37px 0;
-  width: 50%;
-  margin: 0 auto;
+  width: 100%;
 }
 .mainMenu ul {
   list-style: none;
@@ -330,6 +334,8 @@ button {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  width: 50%;
+  margin: 0 auto;
 }
 .mainMenu li {
   padding: 0 25px;
@@ -346,9 +352,10 @@ button {
   font-size: 1.75rem;
 }
 
-header {
+/* Home Page Header */
+.main {
   background-color: #b9dde7;
-  min-height: 100vh;
+  min-height: 50vh;
   width: 100%;
 }
 
@@ -388,12 +395,27 @@ header {
 }
 
 /* Contact Page Header */
-/* Blog Page Header */
-.blog .imgContainer {
-  background-image: url(./assets/blog-image-1.jpg);
+.contactPage {
+  background-image: url(../assets/contact-image-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  min-height: 50vh;
+}
+.contactPage .headerContent {
+  position: relative;
+  top: 405px;
+}
+
+/* Blog Page Header */
+.blog {
+  background-image: url(../assets/blog-image-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+}
+.blog .headerContent {
+  position: relative;
+  top: 402px;
 }
 
 /* .aboutHarper */
@@ -611,10 +633,19 @@ footer p {
 }
 .contactSectionMain .contactInfo {
   background-color: white;
-  width: 20%;
+  width: 45%;
+  padding: 35px;
 }
-.contactSectionMain .contactInfo p {
+.contactSectionMain .contactInfo .textContainer p {
   margin-bottom: 0;
+}
+.contactSectionMain .contactInfo .textContainer a {
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  color: #171717;
+}
+.contactSectionMain .contactInfo .textContainer a:hover, .contactSectionMain .contactInfo .textContainer a:focus {
+  color: #227284;
 }
 
 .socialIcons {
@@ -629,16 +660,20 @@ footer p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 40%;
-  margin: 20px;
+  margin-bottom: 15px;
 }
 
 .socialIcons a {
   color: #227284;
   text-decoration: none;
 }
+.socialIcons a:hover, .socialIcons a:focus {
+  color: #171717;
+}
 
 .contactForm {
-  width: 80%;
+  width: calc(100% - 20px);
+  margin-left: 20px;
 }
 
 /* BLOG PAGE */
@@ -668,10 +703,9 @@ footer p {
   background-color: white;
 }
 
-.sideBar {
-  padding: 20px 20px;
+.recentPosts ul {
+  margin-left: 15px;
 }
-
 .recentPosts li {
   list-style-position: inside;
 }
@@ -691,12 +725,12 @@ footer p {
 }
 
 .blogContent {
-  padding: 40px 40px 60px 40px;
+  padding: 21px 40px 60px 40px;
   margin-bottom: 30px;
   border-bottom: 5px solid #227284;
 }
 .blogContent p {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .blogComments {
@@ -783,6 +817,10 @@ input::placeholder, textarea::placeholder {
   color: #171717;
   font-size: 1rem;
   opacity: 1;
+}
+
+textarea {
+  resize: none;
 }
 
 @media (max-width: 1000px) {

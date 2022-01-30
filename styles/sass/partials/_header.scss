@@ -1,48 +1,62 @@
-header {
+/* Home Page Header */
+.main {
     background-color: $primary;
-    min-height: 100vh;
+    min-height: 50vh;
     width: 100%;
 }// look at the nesting here and update
-    .headerContent {
+
+
+.headerContent {
+    display: flex;
+    .imgContainer {
+        width: 40%;
+        position: relative; //look at changing this to position absolute to
+        top: 50px;
+    }
+    .imgContainer img {
+        max-width: 100%;
+        width: 100%;
+        box-shadow: 15px 15px white;
+    }
+    .headerText {
+        width: 60%;
         display: flex;
-        .imgContainer {
-            width: 40%;
-            position: relative; //look at changing this to position absolute to
-            top: 50px;
+        align-items: center;
+        .headerTextContainer {
+            margin-left: 100px;
+            position: relative;
         }
-        .imgContainer img {
-            max-width: 100%;
-            width: 100%;
-            box-shadow: 15px 15px white;
-        }
-        .headerText {
-            width: 60%;
-            display: flex;
-            align-items: center;
-            .headerTextContainer {
-                margin-left: 100px;
-                position: relative;
-            }
-            .headerTextContainer img {
-                position: absolute;
-                top: -95px;
-                right: -50px;
-            }
+        .headerTextContainer img {
+            position: absolute;
+            top: -95px;
+            right: -50px;
         }
     }
+}
 
 
 /* Contact Page Header */
-
+.contactPage {
+    background-image: url(../assets/contact-image-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+    .headerContent {
+        position: relative;
+        top: 405px;
+    }
+}
 
 /* Blog Page Header */
 
 .blog {
-    .imgContainer {
-        background-image: url(./assets/blog-image-1.jpg);
+        background-image: url(../assets/blog-image-1.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         // width: 100%;
-        min-height: 100vh;
+        min-height: 50vh;
+        .headerContent {
+        position: relative;
+        top: 402px;
     }
 }

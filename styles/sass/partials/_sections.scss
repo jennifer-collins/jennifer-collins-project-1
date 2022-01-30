@@ -206,10 +206,23 @@ footer {
     align-items: flex-start;
     .contactInfo {
         background-color: white;
-        width: 20%;
+        // width: 20%;
+        width: 45%;
+        padding: 35px;
         // margin: 95px 0;
-        p {
-            margin-bottom: 0;
+        .textContainer {
+            p {
+                margin-bottom: 0;
+            }
+            a {
+                text-decoration: none;
+                font-family: $headerFont;
+                color: $textColorPrimary;
+                &:hover,
+                &:focus {
+                    color: $secondary;
+                }
+            }
         }
     }
 }
@@ -219,16 +232,23 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     width: 40%;
-    margin: 20px;
+    // margin: 20px;
+    margin-bottom: 15px;
 }
 
 .socialIcons a {
     color: $secondary;
     text-decoration: none;
+    &:hover,
+    &:focus {
+        color: $textColorPrimary;
+    }
 }
 
 .contactForm {
-    width: 80%;
+    // width: 80%;
+    width: calc(100% - 20px);
+    margin-left: 20px;
 }
 
 /* BLOG PAGE */
@@ -259,11 +279,14 @@ footer {
     background-color: white;
 }
 
-.sideBar {
-    padding: 20px 20px;
-}
+// .sideBar {
+//     padding: 20px 20px;
+// }
 
 .recentPosts {
+    ul {
+        margin-left: 15px;
+    }
     li {
         list-style-position: inside;
         a {
@@ -283,11 +306,12 @@ footer {
 }
 
 .blogContent {
-    padding: 40px 40px 60px 40px;
+    padding: 21px 40px 60px 40px;
+    // margin: 19px 0 30px 0;
     margin-bottom: 30px;
     border-bottom: 5px solid $secondary;
     p {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
 }
 
