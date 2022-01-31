@@ -6,6 +6,7 @@
     .textContainer {
         width: 50%;
         margin: 115px 0;
+        padding-right: 53px;
     }
 }
 
@@ -80,7 +81,9 @@
 
 /* .travel */
 .travel {
-    margin-bottom: 75px;
+    // margin-bottom: 75px;
+    margin-top: 50px;
+    min-height: 40vh;
 }
 
 .travel .contentContainer {
@@ -91,10 +94,13 @@
     .imgContainer {
         width: 50%;
         position: relative;
-        bottom: 45px;
+        // bottom: 45px;
         img {
             max-width: 100%;
-            box-shadow: 15px 15px $secondary, -200px 15px $secondary;
+            // box-shadow: 15px 15px $secondary, -200px 15px $secondary;
+            box-shadow: 15px 15px $secondary, -155px 15px $secondary, -500px 15px $secondary;
+            position: absolute;
+            bottom: -150px;
         }
     }
     .textContainer {
@@ -106,7 +112,10 @@
 
 /* .favourites */
 .favourites {
-    margin-bottom: 75px;
+    // margin-bottom: 50px;
+    margin-bottom: 90px;
+    min-height: 40vh;
+    padding-top: 62px;
 }
 
 .favourites .contentContainer {
@@ -120,7 +129,11 @@
         top: 45px;
         img {
             max-width: 100%;
-            box-shadow: 15px 15px $primary, 200px 15px $primary;
+            // box-shadow: 15px 15px $primary, 200px 15px $primary;
+            box-shadow: 15px 15px $primary, 155px 15px $primary, 500px 15px $primary;
+            position: absolute;
+            // top: -155px;
+            top: -205px;
         }
     }
     .textContainer {
@@ -134,11 +147,14 @@
 /* .harpersJourney */
 .harpersJourney {
     background-color: $textColorSecondary;
-    .contentContainer{
+    // height: 50vh;
+    padding-top: 75px;
+    .contentContainer {
         display: flex;
         flex-direction: row;
         min-height: 50vh;
-        align-items: center;
+        // padding-top: 75px;
+        // align-items: center;
     }
 }
 
@@ -165,22 +181,39 @@
 .imageGallery {
     padding: 60px 0;
     margin: 0;
-    .imgContainer {
+    ul {
+        list-style: none;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
-        // width: 100%;
-        // width: calc(33.3% - 5px);
-        // margin: 0 5px;
-        .image {
-            // width: 33.3%;
+        li {
+            // width: calc(100% / 3) -20px;
+            // margin: 0 0 40px 0;
+            width:30%;
         }
         img {
             max-width: 100%;
-        } 
+        }
     }
 }
+
+// .imageGallery {
+//     padding: 60px 0;
+//     margin: 0;
+//     .imgContainer {
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: space-between;
+//         flex-wrap: wrap;
+        // width: 100%;
+        // width: calc(33.3% - 5px);
+        // margin: 0 5px;
+        // img {
+        //     max-width: 100%;
+        // } 
+//     }
+// }
 
 /* Footer */
 footer {

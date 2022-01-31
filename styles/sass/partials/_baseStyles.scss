@@ -26,5 +26,10 @@ button {
     padding: 16px 45px;
     letter-spacing: 1px;
     border: none;
+    &:hover,
+    &:focus {
+        color: $textColorSecondary;
+        outline: none;
+    }
 }
 

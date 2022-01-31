@@ -316,6 +316,10 @@ button {
   letter-spacing: 1px;
   border: none;
 }
+button:hover, button:focus {
+  color: #f6f6f6;
+  outline: none;
+}
 
 .mainMenu {
   background-color: #b9dde7;
@@ -431,6 +435,7 @@ button {
 .aboutHarper .textContainer {
   width: 50%;
   margin: 115px 0;
+  padding-right: 53px;
 }
 
 /* .pageAreas */
@@ -485,7 +490,8 @@ button {
 
 /* .travel */
 .travel {
-  margin-bottom: 75px;
+  margin-top: 50px;
+  min-height: 40vh;
 }
 
 .travel .contentContainer {
@@ -503,12 +509,13 @@ button {
 .travel .contentContainer .imgContainer {
   width: 50%;
   position: relative;
-  bottom: 45px;
 }
 .travel .contentContainer .imgContainer img {
   max-width: 100%;
-  -webkit-box-shadow: 15px 15px #68b0c1, -200px 15px #68b0c1;
-          box-shadow: 15px 15px #68b0c1, -200px 15px #68b0c1;
+  -webkit-box-shadow: 15px 15px #68b0c1, -155px 15px #68b0c1, -500px 15px #68b0c1;
+          box-shadow: 15px 15px #68b0c1, -155px 15px #68b0c1, -500px 15px #68b0c1;
+  position: absolute;
+  bottom: -150px;
 }
 .travel .contentContainer .textContainer {
   width: calc(50% - 62px);
@@ -517,7 +524,9 @@ button {
 
 /* .favourites */
 .favourites {
-  margin-bottom: 75px;
+  margin-bottom: 90px;
+  min-height: 40vh;
+  padding-top: 62px;
 }
 
 .favourites .contentContainer {
@@ -539,8 +548,10 @@ button {
 }
 .favourites .contentContainer .imgContainer img {
   max-width: 100%;
-  -webkit-box-shadow: 15px 15px #b9dde7, 200px 15px #b9dde7;
-          box-shadow: 15px 15px #b9dde7, 200px 15px #b9dde7;
+  -webkit-box-shadow: 15px 15px #b9dde7, 155px 15px #b9dde7, 500px 15px #b9dde7;
+          box-shadow: 15px 15px #b9dde7, 155px 15px #b9dde7, 500px 15px #b9dde7;
+  position: absolute;
+  top: -205px;
 }
 .favourites .contentContainer .textContainer {
   width: calc(50% - 62px);
@@ -550,6 +561,7 @@ button {
 /* .harpersJourney */
 .harpersJourney {
   background-color: #f6f6f6;
+  padding-top: 75px;
 }
 .harpersJourney .contentContainer {
   display: -webkit-box;
@@ -560,9 +572,6 @@ button {
       -ms-flex-direction: row;
           flex-direction: row;
   min-height: 50vh;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .harpersJourney .imgContainer {
@@ -584,7 +593,8 @@ button {
   padding: 60px 0;
   margin: 0;
 }
-.imageGallery .imgContainer {
+.imageGallery ul {
+  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -598,7 +608,10 @@ button {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.imageGallery .imgContainer img {
+.imageGallery ul li {
+  width: 30%;
+}
+.imageGallery ul img {
   max-width: 100%;
 }
 
@@ -831,6 +844,30 @@ textarea {
   resize: none;
 }
 
+@media (max-width: 1250px) {
+  .main h1 {
+    font-size: 6rem;
+  }
+
+  .headerContent .headerText .headerTextContainer img {
+    top: -75px;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .pageAreas .pageAreaContainer {
+    padding: 75px 0 60px 0;
+  }
+  .pageAreas .pageAreaContainer li {
+    padding-right: 25px;
+  }
+
+  .travel {
+    margin-top: 80px;
+  }
+}
 @media (max-width: 1000px) {
   /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
 }

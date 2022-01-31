@@ -1,3 +1,27 @@
+@media (max-width: 1250px) {    
+    .main h1 {
+        font-size: 6rem;
+    }
+    .headerContent .headerText .headerTextContainer img {
+        top: -75px;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .pageAreas .pageAreaContainer {
+        padding: 75px 0 60px 0;
+        li {
+            padding-right: 25px;
+        }
+    }
+
+    .travel {
+        margin-top: 80px;
+    }
+}
+
 @media (max-width: 1000px) {
     /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
 }
