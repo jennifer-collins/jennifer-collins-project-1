@@ -120,7 +120,7 @@
         top: 45px;
         img {
             max-width: 100%;
-            box-shadow: 15px 15px $tertiary, 200px 15px $tertiary;
+            box-shadow: 15px 15px $primary, 200px 15px $primary;
         }
     }
     .textContainer {
@@ -148,7 +148,7 @@
         // width: calc(30% - 60px);
         // margin-right: 60px;
         img {
-            box-shadow: 15px 15px $secondary;
+            box-shadow: 15px 15px $tertiary;
             max-width: 100%;
         }
     }
@@ -218,9 +218,10 @@ footer {
                 text-decoration: none;
                 font-family: $headerFont;
                 color: $textColorPrimary;
+                letter-spacing: 1px;
                 &:hover,
                 &:focus {
-                    color: $secondary;
+                    color: $tertiary;
                 }
             }
         }
@@ -237,7 +238,7 @@ footer {
 }
 
 .socialIcons a {
-    color: $secondary;
+    color: $tertiary;
     text-decoration: none;
     &:hover,
     &:focus {
@@ -309,7 +310,7 @@ footer {
     padding: 21px 40px 60px 40px;
     // margin: 19px 0 30px 0;
     margin-bottom: 30px;
-    border-bottom: 5px solid $secondary;
+    border-bottom: 5px solid $tertiary;
     p {
         margin-bottom: 15px;
     }
@@ -324,6 +325,9 @@ footer {
         padding: 38px;
         background-color: white;
         margin-bottom: 20px;
+        p {
+            margin: 0;
+        }
         .imgContainer {
             margin-right: 20px;
         }
@@ -331,6 +335,6 @@ footer {
 }
 
 .daisyComment {
-    border-bottom: 5px solid $secondary;
+    border-bottom: 5px solid $tertiary;
 }
 
