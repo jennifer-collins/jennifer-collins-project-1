@@ -14,11 +14,27 @@
     <nav class="mainMenu">
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#aboutHarper">About</a></li>
             <li class="harper"><a href="#">Harper</a></li>
             <li><a href="./blog.html">Blog</a></li>
             <li><a href="./contact.html">Contact</a></li>
-        </ul>
+        </ul><!-- END .mainMenu -->
+
+        <div class="mobileNav">
+            <!-- <div class="mobileIcon"> -->
+                <input type="checkbox" id="navToggle" class="navToggle">
+                <label for="navToggle" class="navToggleLabel">
+                    <span><i class="fas fa-bars"></i></span>
+                </label>
+            <!-- </div> -->
+
+            <ul class="mobileMenu">
+                <li><a href="./index.html" class="mobileLinks">Home</a></li>
+                <li><a href="#aboutHarper" class="mobileLinks">About</a></li>
+                <li><a href="./blog.html" class="mobileLinks">Blog</a></li>
+                <li><a href="./contact.html" class="mobileLinks">Contact</a></li>
+            </ul>
+        </div><!-- END .mobileNav -->
     </nav><!-- END .mainMenu -->
     <header class="main">
         <!-- <div class="wrapper"> -->
@@ -225,7 +241,7 @@
                     <li>
                         <img src="./assets/home-image-7.jpg" alt="Airplane flying through colourful clouds">
                     </li>
-                    <li>
+                    <li class="mobileHidden">
                         <img src="./assets/home-image-8.jpg"alt="Cotton candy pink clouds against a blue sky">
                     </li>
                 </ul>

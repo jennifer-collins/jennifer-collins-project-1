@@ -360,6 +360,72 @@ button:hover, button:focus {
   font-size: 1.75rem;
 }
 
+/* MOBILE NAV */
+.mobileNav {
+  position: relative;
+  top: 0;
+  right: 0;
+  background-color: #b9dde7;
+  width: 100%;
+  -webkit-transition: -webkit-transform 400ms ease-in-out;
+  transition: -webkit-transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
+  display: none;
+}
+
+.mobileNav i {
+  font-size: 2rem;
+}
+.mobileNav i:hover, .mobileNav i:focus {
+  color: #f6f6f6;
+}
+
+.mobileNav ul {
+  display: none;
+  width: 100%;
+}
+.mobileNav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  text-align: center;
+  position: relative;
+  top: 45px;
+  background-color: #f6f6f6;
+}
+
+.mobileMenu a:hover, .mobileMenu a:focus {
+  color: #227284;
+}
+
+.navToggle:checked ~ ul {
+  display: block;
+}
+
+.navToggle {
+  display: none;
+}
+
+.navToggleLabel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /* Home Page Header */
 .main {
   background-color: #b9dde7;
@@ -423,7 +489,7 @@ button:hover, button:focus {
 }
 .blog .headerContent {
   position: relative;
-  top: 402px;
+  top: 370px;
 }
 
 /* .aboutHarper */
@@ -884,11 +950,11 @@ textarea {
 
 @media (max-width: 1250px) {
   .main h1 {
-    font-size: 6rem;
+    font-size: 7rem;
   }
 
   .headerContent .headerText .headerTextContainer img {
-    top: -75px;
+    top: -80px;
   }
 
   p {
@@ -905,13 +971,439 @@ textarea {
   .travel {
     margin-top: 80px;
   }
+
+  /*CONTACT PAGE*/
+  .contactPage .headerContent {
+    top: 375px;
+  }
+
+  /* BLOG PAGE */
+}
+@media (max-width: 1100px) {
+  /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
+  .headerContent .headerText .headerTextContainer {
+    margin-left: 60px;
+  }
+}
+@media (max-width: 1050px) {
+  .main h1 {
+    font-size: 6rem;
+  }
+
+  .headerContent .headerText .headerTextContainer img {
+    top: -75px;
+  }
 }
 @media (max-width: 1000px) {
-  /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
+  .headerContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .headerContent .headerText {
+    width: 65%;
+  }
+
+  .main h1 {
+    font-size: 7rem;
+    margin-top: 40px;
+  }
+
+  .headerContent .imgContainer {
+    width: 50%;
+  }
+
+  .headerContent .headerText .headerTextContainer img {
+    top: -45px;
+  }
+
+  .headerContent .headerText .headerTextContainer {
+    margin: 60px;
+  }
+
+  .aboutHarper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .aboutHarper .textContainer {
+    width: 80%;
+    margin: 90px 0;
+    padding: 53px;
+  }
+
+  .pageAreaContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .pageAreaContainer li {
+    width: 80%;
+  }
+
+  /* TRAVEL SECTION */
+  .travel .contentContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .travel .contentContainer .imgContainer {
+    width: 65%;
+  }
+
+  .travel .contentContainer .imgContainer img {
+    bottom: 40px;
+    position: relative;
+  }
+
+  .travel .contentContainer .textContainer {
+    width: 80%;
+    padding-top: 40px;
+  }
+
+  /* FAVOURITES SECTION */
+  .favourites .contentContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: right;
+  }
+  .favourites .contentContainer .imgContainer img {
+    position: relative;
+    top: -50px;
+  }
+
+  .favourites .contentContainer .imgContainer {
+    width: 65%;
+  }
+
+  .favourites .contentContainer .textContainer {
+    width: 80%;
+    padding-top: 40px;
+  }
+
+  /* HARPERS JOURNEY SECTION */
+  .harpersJourney {
+    padding: 75px 0;
+  }
+
+  .harpersJourney .contentContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+
+  .harpersJourney .textContainer {
+    width: 80%;
+    margin-top: 60px;
+    margin-left: 0;
+  }
+
+  /* CONTACT PAGE */
+  .contactPage {
+    min-height: 40vh;
+  }
+  .contactPage .headerContent {
+    top: 285px;
+  }
+
+  .contactSectionMain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactSectionMain .contactInfo {
+    margin-bottom: 30px;
+  }
+
+  /* BLOG PAGE */
+  .blogSectionContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .blogMain .sideBar {
+    margin-top: 30px;
+  }
+
+  .aboutHarperBlog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 20px;
+  }
+
+  .blogMain .sideBar .aboutHarperBlog .imgContainer {
+    margin-right: 20px;
+  }
+
+  .blogMain .sideBar .recentPosts {
+    margin-left: 20px;
+  }
 }
 @media (max-width: 800px) {
   /* all of our styles for TABLET devices will go within this breakpoint */
+  .main h1 {
+    font-size: 5.5rem;
+  }
+
+  .headerContent .headerText .headerTextContainer {
+    margin: 60px 60px 60px 20px;
+  }
+
+  .headerContent .headerText .headerTextContainer img {
+    top: -30px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .pageAreas .pageAreaContainer {
+    padding: 60px 0 30px 0;
+  }
+
+  button {
+    font-size: 0.9rem;
+    line-height: 25px;
+    padding: 10px 35px;
+  }
+
+  .aboutHarperBlog {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 650px) {
+  .mainMenu ul {
+    display: none;
+  }
+
+  .mobileNav {
+    display: block;
+  }
+
+  .headerContent .headerText .headerTextContainer {
+    margin: 60px 60px 60px 0px;
+  }
+
+  .headerContent .headerText .headerTextContainer img {
+    top: -20px;
+    width: 40%;
+    right: -40px;
+  }
+
+  .pageAreas .textContainer h3 {
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    margin-bottom: 32px;
+  }
+
+  .pageAreas .imgContainer {
+    height: 30vh;
+  }
+
+  .harpersJourney {
+    padding: 45px 0;
+  }
+
+  .harpersJourney .imgContainer {
+    width: 45%;
+  }
+
+  .imageGallery .mobileHidden {
+    display: none;
+  }
+
+  .imageGallery ul li {
+    width: 48%;
+  }
+
+  .socialMedia ul li {
+    margin: 0 0 40px 0;
+    width: calc(50% - 20px);
+  }
+
+  /* CONTACT PAGE */
+  .blog h1, .contactPage h1 {
+    font-size: 4rem;
+  }
+
+  .contactSectionMain .contactInfo {
+    width: 85%;
+    margin-left: 55px;
+  }
+}
+@media (max-width: 550px) {
+  .main h1 {
+    font-size: 5rem;
+  }
+
+  .headerContent .headerText .headerTextContainer img {
+    top: 4px;
+    width: 30%;
+    right: -25px;
+  }
+
+  .headerContent .headerText .headerTextContainer {
+    margin: 60px 0px;
+  }
+
+  .aboutHarperBlog .imgContainer img {
+    max-width: 100%;
+  }
 }
 @media (max-width: 500px) {
   /* all of our styles for MOBILE devices will go within this breakpoint */
+  .main {
+    min-height: 40vh;
+  }
+  .main h1 {
+    font-size: 4rem;
+  }
+
+  .headerContent .headerText .headerTextContainer img {
+    top: 26px;
+    width: 25%;
+    right: -18px;
+  }
+
+  .headerContent .imgContainer img {
+    display: none;
+  }
+
+  .aboutHarper .textContainer {
+    padding: 0;
+  }
+
+  .pageAreas .pageAreaContainer li {
+    padding-right: 0;
+  }
+
+  .travel .contentContainer .textContainer {
+    padding-top: 0;
+  }
+
+  .travel .contentContainer .imgContainer img {
+    -webkit-box-shadow: 15px 15px #68b0c1;
+            box-shadow: 15px 15px #68b0c1;
+  }
+
+  .favourites .contentContainer .imgContainer img {
+    -webkit-box-shadow: 15px 15px #b9dde7;
+            box-shadow: 15px 15px #b9dde7;
+  }
+
+  /* CONTACT PAGE */
+  .contactPage h1 {
+    font-size: 3rem;
+  }
+
+  .contactSectionMain .contactInfo {
+    width: 60%;
+    margin-left: 85px;
+  }
+
+  .contactForm {
+    margin-left: 10px;
+  }
+
+  .nameEmail {
+    display: block;
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .aboutHarperBlog .imgContainer img {
+    display: none;
+  }
+
+  .sideBar ul {
+    font-size: 0.8rem;
+  }
+
+  .blogComments .maggieComment,
+.blogComments .daisyComment {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .blog {
+    min-height: 25vh;
+  }
+  .blog .headerContent {
+    top: 155px;
+  }
+}
+@media (max-width: 380px) {
+  .main h1 {
+    font-size: 3rem;
+  }
+
+  .headerContent .headerText .headerTextContainer img {
+    display: none;
+  }
+
+  p {
+    font-size: 0.8rem;
+    line-height: 30px;
+  }
+
+  /* CONTACT PAGE */
+  .contactPage h1 {
+    font-size: 2rem;
+  }
+
+  .contactPage {
+    min-height: 25vh;
+  }
+  .contactPage .headerContent {
+    top: 130px;
+  }
+
+  .contactSectionMain .contactInfo {
+    width: 75%;
+    margin-left: 45px;
+  }
 }
