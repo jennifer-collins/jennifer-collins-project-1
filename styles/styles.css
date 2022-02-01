@@ -315,10 +315,14 @@ button {
   padding: 16px 45px;
   letter-spacing: 1px;
   border: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 button:hover, button:focus {
   color: #f6f6f6;
   outline: none;
+  -webkit-box-shadow: 1px 1px 10px #171717;
+          box-shadow: 1px 1px 10px #171717;
 }
 
 .mainMenu {
@@ -472,6 +476,18 @@ button:hover, button:focus {
   margin-bottom: 35px;
 }
 
+.areaLink {
+  text-decoration: none;
+  color: #171717;
+}
+.areaLink:hover {
+  color: #227284;
+}
+.areaLink:focus {
+  color: #227284;
+  border-bottom: 1px solid #227284;
+}
+
 .areaCopy {
   margin-bottom: 58px;
 }
@@ -551,7 +567,7 @@ button:hover, button:focus {
   -webkit-box-shadow: 15px 15px #b9dde7, 155px 15px #b9dde7, 500px 15px #b9dde7;
           box-shadow: 15px 15px #b9dde7, 155px 15px #b9dde7, 500px 15px #b9dde7;
   position: absolute;
-  top: -205px;
+  top: -202px;
 }
 .favourites .contentContainer .textContainer {
   width: calc(50% - 62px);
@@ -572,6 +588,7 @@ button:hover, button:focus {
       -ms-flex-direction: row;
           flex-direction: row;
   min-height: 50vh;
+  margin-top: 35px;
 }
 
 .harpersJourney .imgContainer {
@@ -649,20 +666,34 @@ footer p {
   width: 45%;
   padding: 35px;
 }
-.contactSectionMain .contactInfo .textContainer p {
+
+.contactSectionMain .textContainer p {
   margin-bottom: 0;
 }
-.contactSectionMain .contactInfo .textContainer a {
+.contactSectionMain .textContainer a {
   text-decoration: none;
   font-family: "Oswald", sans-serif;
   color: #171717;
   letter-spacing: 1px;
 }
-.contactSectionMain .contactInfo .textContainer a:hover, .contactSectionMain .contactInfo .textContainer a:focus {
+.contactSectionMain .textContainer a:hover, .contactSectionMain .textContainer a:focus {
   color: #227284;
 }
+.contactSectionMain .textContainer .emailLink {
+  margin-bottom: 15px;
+}
 
-.socialIcons {
+.contactInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contactInfo ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -670,11 +701,14 @@ footer p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 40%;
+  list-style: none;
   margin-bottom: 15px;
+}
+.contactInfo ul li {
+  margin-right: 30px;
+}
+.contactInfo ul i {
+  font-size: 1.3rem;
 }
 
 .socialIcons a {
@@ -808,7 +842,6 @@ input, textarea {
   font-family: "Cabin", sans-serif;
   border: none;
   margin-bottom: 20px;
-  padding: 15px 0 15px 15px;
 }
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #171717;
@@ -840,8 +873,13 @@ input:focus, textarea:focus {
   border-bottom: 2px solid #227284;
 }
 
+input {
+  padding: 20px 0 20px 20px;
+}
+
 textarea {
   resize: none;
+  padding: 30px 20px;
 }
 
 @media (max-width: 1250px) {

@@ -23,7 +23,6 @@
         width: 100%;
     }
 }
-    
 
 // .pageAreaOverall {
 //     display: flex;
@@ -60,6 +59,19 @@
         margin-bottom: 35px;
     }
 }
+
+.areaLink {
+    text-decoration: none;
+    color: $textColorPrimary;
+    &:hover{
+        color: $tertiary;
+    }
+    &:focus {
+        color: $tertiary;
+        border-bottom: 1px solid $tertiary;
+    }
+}
+
 
 //this is being overwritten by the typography variable - need to fix
 .areaCopy {
@@ -133,7 +145,7 @@
             box-shadow: 15px 15px $primary, 155px 15px $primary, 500px 15px $primary;
             position: absolute;
             // top: -155px;
-            top: -205px;
+            top: -202px;
         }
     }
     .textContainer {
@@ -153,6 +165,7 @@
         display: flex;
         flex-direction: row;
         min-height: 50vh;
+        margin-top: 35px;
         // padding-top: 75px;
         // align-items: center;
     }
@@ -236,6 +249,7 @@ footer {
     display: flex;
     flex-direction: row;
     padding: 95px 0;
+    // flex-wrap: wrap;
     align-items: flex-start;
     .contactInfo {
         background-color: white;
@@ -243,31 +257,47 @@ footer {
         width: 45%;
         padding: 35px;
         // margin: 95px 0;
-        .textContainer {
-            p {
-                margin-bottom: 0;
-            }
-            a {
-                text-decoration: none;
-                font-family: $headerFont;
-                color: $textColorPrimary;
-                letter-spacing: 1px;
-                &:hover,
-                &:focus {
-                    color: $tertiary;
-                }
-            }
-        }
     }
 }
 
-.socialIcons {
+.contactSectionMain .textContainer {
+    p {
+        margin-bottom: 0;
+    }
+    a {
+        text-decoration: none;
+        font-family: $headerFont;
+        color: $textColorPrimary;
+        letter-spacing: 1px;
+        &:hover,
+        &:focus {
+            color: $tertiary;
+        }
+    }
+    .emailLink {
+        margin-bottom: 15px;
+    }
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactInfo ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 40%;
+    list-style: none;
+    // justify-content: space-between;
+    // width: 70%;
     // margin: 20px;
     margin-bottom: 15px;
+    li {
+        margin-right: 30px;
+    }
+    i {
+        font-size: 1.3rem;
+    }
 }
 
 .socialIcons a {

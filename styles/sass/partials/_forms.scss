@@ -44,7 +44,6 @@ input, textarea {
     font-family: $bodyFont;
     border: none;
     margin-bottom: 20px;
-    padding: 15px 0 15px 15px; 
     &::placeholder {
         color: $textColorPrimary;
         font-size: 1rem;
@@ -56,6 +55,14 @@ input, textarea {
     }
 }
 
+input {
+    padding: 20px 0 20px 20px;
+}
+
 textarea {
     resize: none;
+    // font-family: $bodyFont;
+    // border: none;
+    // margin-bottom: 20px;
+    padding: 30px 20px; 
 }
