@@ -32,6 +32,8 @@
     // when user submits the form, display message on screen thanking them for their feedback
 
 const contactFormElement = document.querySelector('form');
+// const contactForm = document.querySelector('.contactForm');
+
 
 contactFormElement.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -78,12 +80,14 @@ contactFormElement.addEventListener('submit', function(event) {
         submitMessage.textContent = (`Thank you for submitting your feedback ${name}`);
 
         submitMessage.style.textAlign = 'center';
+        setTimeout(() => { submitMessage.style.display = 'none'}, 5000);
     }
     // if (task) {
         //     contactInputs.value = '';
         // }
-        
 });
+
+
 
 // const submitMessage = document.
     
