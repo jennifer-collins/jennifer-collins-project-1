@@ -57,10 +57,6 @@ contactFormElement.addEventListener('submit', function(event) {
     
     if (nameInput.value == '' && emailInput.value == '') {
         alert('Please enter your name and email.');
-
-    // } else {
-    //     console.log(nameInput);
-    // }
     } else if (nameInput.value == '') {
         alert('Please enter your name.');
         console.log('This is the name conditional')
@@ -87,6 +83,12 @@ contactFormElement.addEventListener('submit', function(event) {
         // }
 });
 
+//COMMENT FORM CODE
+// const commentFormElement = document.querySelector('form');
+
+// contactFormElement.addEventListener('submit', function(event) {
+//     event.preventDefault();
+// });
 
 
 // const submitMessage = document.
