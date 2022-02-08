@@ -31,57 +31,61 @@
     // if email input is missing a @ or ., alert to enter a valid email address
     // when user submits the form, display message on screen thanking them for their feedback
 
-const contactFormElement = document.querySelector('form');
-// const contactForm = document.querySelector('.contactForm');
+// --------------- contact form begins    
+
+// const contactFormElement = document.querySelector('form');
+// // const contactForm = document.querySelector('.contactForm');
 
 
-contactFormElement.addEventListener('submit', function(event) {
-    event.preventDefault();
-    console.log(event);
-    // remove this which will refresh the page, and inside the event listener - submit form set to hidden and append a div/heading that says your message has been received
+// contactFormElement.addEventListener('submit', function(event) {
+//     event.preventDefault();
+//     console.log(event);
+//     // remove this which will refresh the page, and inside the event listener - submit form set to hidden and append a div/heading that says your message has been received
 
-    // const nameInput = document.querySelector('input[type=text]');
-    const nameInput = document.getElementById('name');
-    const name = nameInput.value;
+//     // const nameInput = document.querySelector('input[type=text]');
+//     const nameInput = document.getElementById('name');
+//     const name = nameInput.value;
     
-    console.log(name);
+//     console.log(name);
 
-    // const emailInput = document.querySelector('input[type=email]');
-    const emailInput = document.getElementById('email');
-    const email = emailInput.value;
-    console.log(email);
+//     // const emailInput = document.querySelector('input[type=email]');
+//     const emailInput = document.getElementById('email');
+//     const email = emailInput.value;
+//     console.log(email);
 
-    const messageInput = document.getElementById('message');
-    const message = messageInput.value;
-    console.log(message);
+//     const messageInput = document.getElementById('message');
+//     const message = messageInput.value;
+//     console.log(message);
     
-    if (nameInput.value == '' && emailInput.value == '') {
-        alert('Please enter your name and email.');
-    } else if (nameInput.value == '') {
-        alert('Please enter your name.');
-        console.log('This is the name conditional')
-    } else if (emailInput.value == '') {
-        alert('Please enter your email.');
-    } else if (messageInput.value == '') {
-        alert('Please enter a message');
-    } else {
-        nameInput.value = '';
-        emailInput.value = '';
-        messageInput.value = '';
-        // return `Thank you for leaving a message ${name}`;
-        const contactForm = document.querySelector('.contactForm');
-        const submitMessage = document.createElement('h4');
+//     if (nameInput.value == '' && emailInput.value == '') {
+//         alert('Please enter your name and email.');
+//     } else if (nameInput.value == '') {
+//         alert('Please enter your name.');
+//         console.log('This is the name conditional')
+//     } else if (emailInput.value == '') {
+//         alert('Please enter your email.');
+//     } else if (messageInput.value == '') {
+//         alert('Please enter a message');
+//     } else {
+//         nameInput.value = '';
+//         emailInput.value = '';
+//         messageInput.value = '';
+//         // return `Thank you for leaving a message ${name}`;
+//         const contactForm = document.querySelector('.contactForm');
+//         const submitMessage = document.createElement('h4');
         
-        contactForm.prepend(submitMessage); // adds to the start of the element
-        submitMessage.textContent = (`Thank you for submitting your feedback ${name}`);
+//         contactForm.prepend(submitMessage); // adds to the start of the element
+//         submitMessage.textContent = (`Thank you for submitting your feedback ${name}`);
 
-        submitMessage.style.textAlign = 'center';
-        setTimeout(() => { submitMessage.style.display = 'none'}, 5000);
-    }
-    // if (task) {
-        //     contactInputs.value = '';
-        // }
-});
+//         submitMessage.style.textAlign = 'center';
+//         setTimeout(() => { submitMessage.style.display = 'none'}, 5000);
+//     }
+//     // if (task) {
+//         //     contactInputs.value = '';
+//         // }
+// });
+
+// --------------------------------- end of contact form code
 
 //COMMENT FORM CODE
 // const commentFormElement = document.querySelector('form');
@@ -103,3 +107,82 @@ contactFormElement.addEventListener('submit', function(event) {
     // Comments have time and date stamp - how to put this information on the page?
     
     //if input == '' (empty string), alert('Please enter your name)
+
+
+const commentFormElement = document.querySelector('form');
+
+commentFormElement.addEventListener('submit', function (event) {
+    event.preventDefault();
+    console.log(event);
+    // const nameInput = document.querySelector('input[type=text]');
+    const nameInput = document.getElementById('name');
+    const name = nameInput.value;
+
+    console.log(name);
+
+    // const emailInput = document.querySelector('input[type=email]');
+    const emailInput = document.getElementById('email');
+    const email = emailInput.value;
+    console.log(email);
+
+    const messageInput = document.getElementById('message');
+    const message = messageInput.value;
+    console.log(message);
+
+    if (nameInput.value == '' && emailInput.value == '') {
+        alert('Please enter your name and email.');
+    } else if (nameInput.value == '') {
+        alert('Please enter your name.');
+        console.log('This is the name conditional')
+    } else if (emailInput.value == '') {
+        alert('Please enter your email.');
+    } else if (messageInput.value == '') {
+        alert('Please enter a message');
+    } else {
+        nameInput.value = '';
+        emailInput.value = '';
+        messageInput.value = '';
+        // return `Thank you for leaving a message ${name}`;
+        const commentForm = document.querySelector('.commentsForm');
+        const submitMessage = document.createElement('h4');
+
+        commentForm.prepend(submitMessage); // adds to the start of the element
+        submitMessage.textContent = (`Thank you for submitting your feedback ${name}`);
+
+        submitMessage.style.textAlign = 'center';
+        setTimeout(() => { submitMessage.style.display = 'none' }, 5000);
+    }
+    addComment(nameInput, messageInput);
+});
+
+// need to add placeholders/parameters in this function
+function addComment(nameInput, messageInput) {
+    const newCommentContainer = document.createElement('div');
+    //only using daisyComment because I didn't make a generic class for the individual comments
+    newCommentContainer.classList.add('daisyComment') 
+    // console.log(newComment);
+
+    const newCommentImageContainer = document.createElement('div');
+    newCommentImageContainer.classList.add('imgContainer');
+
+    const newCommentImage = document.createElement('img');
+    newCommentImage.src = "https://picsum.photos/89";
+
+    newCommentImageContainer.appendChild(newCommentImage);
+    newCommentContainer.appendChild(newCommentImageContainer);
+
+    const newCommentTextContainer = document.createElement('div');
+    newCommentTextContainer.classList.add('textContainer');
+
+    const newCommentNameDate = document.createElement('p');
+    newCommentNameDate.textContent = `Today\'s Date by ${nameInput}`;
+
+    const newCommentMessage = document.createElement('p');
+    newCommentMessage.textContent = `${messageInput}`;
+
+    newCommentTextContainer.appendChild(newCommentNameDate);
+    newCommentTextContainer.appendChild(newCommentMessage);
+
+    newCommentContainer.appendChild(newCommentTextContainer);
+
+};
