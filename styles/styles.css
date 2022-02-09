@@ -861,6 +861,9 @@ footer p {
   background-color: white;
   margin-bottom: 20px;
 }
+.blogComments .maggieComment .textContainer, .blogComments .daisyComment .textContainer {
+  width: 100%;
+}
 .blogComments .maggieComment p, .blogComments .daisyComment p {
   margin: 0;
 }
