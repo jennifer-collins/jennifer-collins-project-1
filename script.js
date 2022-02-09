@@ -37,6 +37,9 @@ for (let i = 0; i < buttonAnimation.length; i++) {
     // when user submits the form, display message on screen thanking them for their feedback
     // append comment from user to the page underneath previous comments
 
+// Thing to note:
+    // My comment form comment containers were mislabelled and I should have labelled them with one class instead of daisyComment and maggieComment (separately). Next time I will be more generic about this.
+
 // --------------- contact form begins    
 
 const contactFormElement = document.querySelector('form');
